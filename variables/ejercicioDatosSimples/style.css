@@ -1,0 +1,31 @@
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+#col-right{
+    background-color: antiquewhite;
+    height: 110px;
+    margin-top: 300px;
+    border-radius: 55px;
+    width: 510px;
+}
+
+#tituloValor{
+    margin-left: 50PX;
+}
+#valor {
+    margin-left: 170px;
+    font-size: large;
+    color: blue;
+}
