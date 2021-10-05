@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Datos Simples</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>Datos Simples en JS</h1>
+            <p>En JS podemos trabajar todo el rato con la misma variable e ir guardando en ella distintos tipos de dato:
+            </p>
+            <br>
+            <h3>TEXTO</h3>
+            <p>Introduce tu nombre para comprobar que todo el rato se va cambiando la misma variable:</p>
+            <input type="text" id="cajaTexto" placeholder="Pon tu nombre">
+            <button onclick="imprimirMensaje()">Enviar</button>
+            <p id="respuesta"></p>
+            <br>
+
+            <h3>NÚMEROS</h3>
+            <p>Introduce un número para multiplicarlo por 2.</p>
+            <p>¡No tengas miedo a poner decimales! En la misma variable podemos guardar tanto números enteros como
+                decimales.</p>
+            <input type="text" id="cajaTexto2" placeholder="Introduce un num">
+            <button onclick="imprimirNum()">Enviar</button>
+            <p id="respuestaNum"></p>
+            <p>Observa que si pones algo que no sea un número, te aparecerá el valor NaN (Not a Number).</p>
+            <br>
+
+            <h3>BOOLEAN</h3>
+            <p>Si el último dato guardado en la variable es texto, aparecerá un true:</p>
+            <button onclick="imprimirBoolean()">Comprobar</button>
+            <p id="respuestaBol"></p><br>
+            <p>De este modo, hemos podido observar que en JS podemos guardar en una misma variable multitud de tipos
+                distintos sin necesidad de declararlos.</p>
+        </div>
+        <div class="column" id="col-right">
+            <h2 id="tituloValor">VALOR ACTUAL DE LA VARIABLE:</h2>
+            <div id="valor">
+                <p>algo = string</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
